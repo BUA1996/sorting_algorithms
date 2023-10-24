@@ -15,13 +15,13 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 /**
- * enum bool: boolean values
+ * enum bool - boolean values
  * @false: value is 0
  * @true: value is 1
  */
