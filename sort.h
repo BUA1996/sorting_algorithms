@@ -3,6 +3,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+
+#define DOWN 1
+#define UP 0
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -16,6 +19,17 @@ typedef struct listint_s
     struct listint_s *prev;
     struct listint_s *next;
 } listint_t;
+
+/**
+ * enum bool: boolean values
+ * @false: value is 0
+ * @true: value is 1
+ */
+typedef enum bool
+{
+	false = 0,
+	true
+} bool;
 void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
